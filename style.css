@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+
+.menu {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+}
+
+.menu.show {
+  opacity: 1;
+}
+
+.menu nav {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.humberger {
+  position: fixed;
+  display: block;
+  top: -10px;
+  right: 8%;
+  font-size: 88px;
+  color: red;
+  background-color: #fff;
+  margin: 0;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+header {
+  height: 100vh;
+  background-image: url(img/mainvisual.jpg);
+  background-size: cover;
+}
+
+header h1 {
+  text-align: center;
+  line-height: 100vh;
+  margin: 0;
+  color: 64px;
+  color: red;
+}
+
+#about {
+  margin-bottom: 100px;
+}
+
+nav {
+  display: none;
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 24px;
+  right: 8%;
+}
+
+nav ul li {
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section_title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+.cakes {
+  margin-bottom: 80px;
+}
+
+.buy {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.buy button {
+  padding: 16px 32px;
+  border: none;
+  background-color: #929292;
+  color: #fff;
+  border-radius: 16px;
+}
+
+.buy button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  height: 240px;
+  background-color: #3b3b3b;
+  color: #fff;
+  text-align: center;
+  line-height: 240px;
+}
+
+@media screen and (min-width: 600px) {
+  .about_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about_container img {
+    width: 45%;
+  }
+  .about_container .about_text {
+    width: 45%;
+  }
+  .cakes_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cakes_item {
+    width: 31%;
+  }
+  nav {
+    display: block;
+  }
+  .humberger {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
